@@ -27,21 +27,18 @@ class BST:
             return
 
     def inorder(self, root):
-        print("\nInOrder traversal: ",end=" ")
         if root:
             self.inorder(root.left)
             print(root.key, end="\t")
             self.inorder(root.right)
 
     def preorder(self, root):
-        print("\npreOrder traversal: ",end=" ")
         if root:
             print(root.key, end="\t")
             self.preorder(root.left)
             self.preorder(root.right)
     
     def postorder(self, root):
-        print("\nPostOrder traversal: ",end=" ")
         if root:
             self.postorder(root.left)
             self.postorder(root.right)
