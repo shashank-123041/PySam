@@ -12,7 +12,6 @@ class Stack1:
         else:
             ele=input("Enter the element to be pushed: ")
             self.stk.insert(0,ele)
-    
     def pop(self):
         if not self.stk:
             print("Stack Underflow!!")
