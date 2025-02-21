@@ -80,10 +80,10 @@ class BST:
 
 def menu():
     obj=BST()
-    root=Node()
+    root=None
     while True:
-        choice=int(input("0. Exit\n1. Insert\n2. Delete\n3. Inorder\n4. Preorder\n5. Postorder\n6. LevelOrder\n7. Search\nChoice: "))
-        operations={1:obj.insert,2:obj.delete,3:obj.inorder,4:obj.preorder,5:obj.postorder,6:obj.levelorder,7:obj.search}
+        choice=int(input("\n\n0. Exit\n1. Insert\n2. Delete\n3. Inorder\n4. Preorder\n5. Postorder\n6. LevelOrder\n7. Search\nChoice: "))
+        operations={0:"",1:obj.insert,2:obj.delete,3:obj.inorder,4:obj.preorder,5:obj.postorder,6:obj.levelorder,7:obj.search}
         if choice in operations:
             match choice:
                 case 0: 
