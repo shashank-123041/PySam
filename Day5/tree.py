@@ -1,3 +1,4 @@
+import sys
 class Node:
     def __init__(self, key):
         self.key = key
@@ -8,13 +9,22 @@ class BST:
     def insert(self, root, key):
         if not root:
             return Node(key)
-        
         if key < root.key:
             root.left = self.insert(root.left, key)
         elif key > root.key:
             root.right = self.insert(root.right, key)
-        
         return root
+
+    def search(self,root,key):
+        if root.key==key:
+            print("Key element present in the tree!!")
+        elif root.key>key:
+            self.search(root.left,key)
+        elif root.key<key:
+            self.search(root.right,key)
+        else:
+            print("Key element Not present in the tree!!")
+            return
 
     def inorder(self, root):
         if root:
@@ -44,7 +54,6 @@ class BST:
                 lvl.append(lvl[0].right)
             lvl.pop(0)
         
-
     def getsucc(self,cur):
         cur=cur.right
         while cur is not None and cur.left is not None:
@@ -69,10 +78,25 @@ class BST:
             root.right=self.delete(root.right,succ.key)
         return root
 
-root=Node(10)
-obj=BST()
-root=obj.insert(root,25)
-root=obj.insert(root,15)
-root=obj.insert(root,5)
+def menu():
+    obj=BST()
+    root=Node()
+    while True:
+        choice=int(input("0. Exit\n1. Insert\n2. Delete\n3. Inorder\n4. Preorder\n5. Postorder\n6. LevelOrder\n7. Search\nChoice: "))
+        operations={1:obj.insert,2:obj.delete,3:obj.inorder,4:obj.preorder,5:obj.postorder,6:obj.levelorder,7:obj.search}
+        if choice in operations:
+            match choice:
+                case 0: 
+                    sys.exit("Tree terminated!!")
+                case 1:
+                    ele=int(input("Enter the Element to insert: ")) 
+                    root=operations[choice](root,ele)
+                case 2:
+                    key=int(input("Enter the Element to delete: ")) 
+                    root=operations[choice](root,key)
+                case default:
+                    operations[choice](root)         
+        else:
+            print("Invalid Choice!!")
 
-obj.levelorder(root)
+menu()
