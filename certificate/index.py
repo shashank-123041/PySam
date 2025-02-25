@@ -3,16 +3,13 @@ from jinja2 import Template
 import os
 import base64
 
-# Function to encode images to Base64
 def encode_image_to_base64(image_path):
     with open(image_path, "rb") as img_file:
         return f"data:image/png;base64,{base64.b64encode(img_file.read()).decode('utf-8')}"
 
-# Function to read CSV file
 def read_csv(file_path):
     return pd.read_csv(file_path)
 
-# Updated A4-sized HTML template
 html_template = """
 <!DOCTYPE html>
 <html lang="en">
