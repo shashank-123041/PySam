@@ -4,7 +4,17 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import sys
 import numpy as np
-import os
+import platform
+import subprocess
+
+def open_documentations():
+    file_path = os.path.join(os.getcwd(), 'Enhanced_Hostel_Food_Wastage_Management_Documentation.docx')
+    if platform.system() == 'Windows':
+        os.startfile(file_path)  #Windows
+    elif platform.system() == 'Darwin':
+        subprocess.call(('open', file_path))  #macOS
+    else:
+        subprocess.call(('xdg-open', file_path))  #Linux
 
 def clear_screen():
     if os.name == 'nt':
@@ -15,6 +25,7 @@ def clear_screen():
 
 class Hostel_food_wastage_managemnet:
 
+    #Done by Shashank P R(1RN23CS191)
     def graph_state_cooked_consumed_wasted(self):
         file_path = os.path.join(os.getcwd(), 'state_wise_food_wastage_analysis.csv')
         df = pd.read_csv(file_path)
@@ -24,7 +35,7 @@ class Hostel_food_wastage_managemnet:
         df_melted = df.melt(id_vars=["State"], 
                             value_vars=["Total_Food_Cooked", "Total_Food_Consumed", "Total_Food_Wasted"], 
                             var_name="Category", 
-                                value_name="Food Quantity (kg)")
+                            value_name="Food Quantity (kg)")
 
         plt.figure(figsize=(12, 6))
         sns.barplot(x="State", y="Food Quantity (kg)", hue="Category", data=df_melted, palette="viridis")
@@ -35,7 +46,7 @@ class Hostel_food_wastage_managemnet:
         plt.legend(title="Category")
         plt.show()
 
-
+    #Done by Shashank P R(1RN23CS191)
     def graph_avg_food_waste_state(self):
         file_path = os.path.join(os.getcwd(), 'state_wise_food_wastage_analysis.csv')
         df = pd.read_csv(file_path)
@@ -54,8 +65,7 @@ class Hostel_food_wastage_managemnet:
         plt.grid(axis="x", linestyle="--", alpha=0.7)
         plt.show()
     
-
-
+    #Done by Mayur B(1RN23CD059)
     def graph_food_consumption_vs_wastage(self):
         file_path = os.path.join(os.getcwd(),'food_wastage_sheet.csv')
         df = pd.read_csv(file_path)
@@ -72,6 +82,7 @@ class Hostel_food_wastage_managemnet:
         plt.title("Food Consumption vs Wastage")
         plt.show()
 
+    #Done by Roshini R(1RN23CS173)
     def graph_meal_waste(self):
         file_path = os.path.join(os.getcwd(),'food_wastage_data.csv')
         data=pd.read_csv(file_path)
@@ -84,7 +95,7 @@ class Hostel_food_wastage_managemnet:
         plt.ylabel("Food Wasted [kg]")
         plt.show()
 
-
+    #Done by Roshini R(1RN23CS173)
     def graph_cuisine_waste(self):
         file_path = os.path.join(os.getcwd(),'food_wastage_data.csv')
         data=pd.read_csv(file_path)
@@ -95,7 +106,7 @@ class Hostel_food_wastage_managemnet:
         plt.axis()
         plt.show()
 
-
+    #Done by Roshini R(1RN23CS173)
     def graph_meal_category_3d(self):
         file_path = os.path.join(os.getcwd(),'food_wastage_data.csv')
         data=pd.read_csv(file_path)
@@ -125,6 +136,7 @@ class Hostel_food_wastage_managemnet:
         ax.set_xticklabels(meal_waste["Meal Type"])
         plt.show()
 
+    #Done by Prasad Reddy(1RN23CI039)
     def graph_reasons_for_waste(self):
         file_path = os.path.join(os.getcwd(),"food_wastage_sheet.csv")
         df = pd.read_csv(file_path)
@@ -137,8 +149,22 @@ class Hostel_food_wastage_managemnet:
         plt.xticks(rotation=30, ha='right')
         plt.show()
 
-        
+    #Done by Prasad Reddy(1RN23CI039)
+    def student_feedback():
 
+        file_path = os.path.join(os.getcwd(),"food_wastage_sheet.csv")
+        df = pd.read_csv(file_path)
+        feedback_counts = df['Student Feedback'].value_counts()
+
+        plt.figure(figsize=(10, 6))
+        sns.barplot(x=feedback_counts.index, y=feedback_counts.values, palette="coolwarm")
+        plt.xlabel("Student Feedback")
+        plt.ylabel("Number of Responses")
+        plt.title("Student Feedback on Hostel Food")
+        plt.xticks(rotation=30, ha='right')
+        plt.show()
+
+    #Done by Anish U(1RN23CS027)
     def graph_food_quality_rating(self):
         #Average food quality rating
         file_path = os.path.join(os.getcwd(),"data2.csv")
@@ -160,7 +186,7 @@ class Hostel_food_wastage_managemnet:
         plt.tight_layout()
         plt.show()
 
-
+    #Done by Anish U(1RN23CS027)
     def graph_transport_cost(self):
         #Average Transportation Cost Incurred for Different NGOs
         file_path = os.path.join(os.getcwd(),"data2.csv")
@@ -179,6 +205,7 @@ class Hostel_food_wastage_managemnet:
         plt.tight_layout()
         plt.show()
 
+    #Done by Anish U(1RN23CS027)
     def graph_leftover_quantity(self):
         #Average Leftover Quantity per Hostel
         file_path = os.path.join(os.getcwd(),"data2.csv")
@@ -199,7 +226,7 @@ class Hostel_food_wastage_managemnet:
         plt.tight_layout()
         plt.show()
 
-
+    #Done by Anish U(1RN23CS027)
     def graph_ngo_feedback(self):
         #NGO feedback
         file_path = os.path.join(os.getcwd(),"data2.csv")
@@ -219,7 +246,7 @@ class Hostel_food_wastage_managemnet:
         plt.tight_layout()
         plt.show()
 
-
+    #Done by Anish U(1RN23CS027)
     def graph_transport_mode_usage(self):
         #Transport Mode Usage for Donations
         file_path = os.path.join(os.getcwd(),"data2.csv")
@@ -242,6 +269,7 @@ def main():
         print("1. State-wise Food Wastage Analysis")
         print("2. Hostel Food Wastage Analysis")
         print("3. Food Wastage Prevention Steps")
+        print("4.Documentations")
         print("0. Exit")
 
         try:
@@ -314,6 +342,9 @@ def main():
                         obj.graph_transport_mode_usage()
                     else:
                         break
+
+            elif choice==4:
+                open_documentations()
             else:
                 print("Invalid choice! Please enter a valid option.")
         except ValueError:
