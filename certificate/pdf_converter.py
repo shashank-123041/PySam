@@ -3,12 +3,10 @@ from jinja2 import Template
 from weasyprint import HTML
 import base64
 
-# Function to encode images to Base64
 def encode_image_to_base64(image_path):
     with open(image_path, "rb") as img_file:
         return f"data:image/png;base64,{base64.b64encode(img_file.read()).decode('utf-8')}"
 
-# Updated A4-sized HTML template with smaller font size for placeholders
 html_template = """
 <!DOCTYPE html>
 <html lang="en">
@@ -206,25 +204,20 @@ html_template = """
 </body>
 """
 
-# Function to process HTML files from a directory and generate PDFs
 def generate_certificates_from_html(input_html_directory, output_directory):
     os.makedirs(output_directory, exist_ok=True)
     
-    # Encode images to Base64
-    background_image_base64 = encode_image_to_base64("bg.png")
-    org_logo_base64 = encode_image_to_base64("mtd.png")
-    signature_image_base64 = encode_image_to_base64("my_sign.png")
+    background_image_base64 = encode_image_to_base64("C:\\learning\\PySam\\certificate\\bg.png")
+    org_logo_base64 = encode_image_to_base64("C:\\learning\PySam\\certificate\\mtd.png")
+    signature_image_base64 = encode_image_to_base64("C:\\learning\\PySam\\certificate\\my_sign.jpg")
     
-    # Loop through all files in the HTML directory
     for filename in os.listdir(input_html_directory):
         if filename.endswith(".html"):
             input_html_path = os.path.join(input_html_directory, filename)
 
-            # Extract name and usn from the filename (or adapt this part based on how data is represented)
-            name = filename.split('_')[0]  # Example: Extracting name from filename
-            usn = filename.split('_')[1].split('.')[0]  # Example: Extracting USN from filename
+            name = filename.split('_')[0]
+            usn = filename.split('_')[1].split('.')[0]
             
-            # Render HTML from template
             template = Template(html_template)
             rendered_html = template.render(
                 name=name,
@@ -234,17 +227,13 @@ def generate_certificates_from_html(input_html_directory, output_directory):
                 signature_image_base64=signature_image_base64
             )
             
-            # Output PDF path
             pdf_file_path = os.path.join(output_directory, f"{name}_{usn}.pdf")
             
-            # Generate PDF from HTML
             HTML(string=rendered_html, base_url=os.getcwd()).write_pdf(pdf_file_path)
             print(f"Generated: {pdf_file_path}")
 
-# Main function
 if __name__ == "__main__":
-    input_html_directory = "D:/final/html_certificates" # Path to the directory with HTML files
-    output_directory = "pdf_certificates"  # Output directory for PDFs
+    input_html_directory = "C:\\learning\\PySam\\certificate\\html_certificates"
+    output_directory = "C:/learning/PySam/certificate/pdf_certificates"
 
-    # Generate certificates from HTML files
     generate_certificates_from_html(input_html_directory, output_directory)
