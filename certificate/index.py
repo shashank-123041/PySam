@@ -183,9 +183,9 @@ def generate_certificate(data, output_dir):
     os.makedirs(output_dir, exist_ok=True)
     
     # Encode images to Base64
-    background_image_base64 = encode_image_to_base64("bg.png")
-    org_logo_base64 = encode_image_to_base64("mtd.png")
-    signature_image_base64 = encode_image_to_base64("my_sign.png")
+    background_image_base64 = encode_image_to_base64("C:\\learning\\PySam\\certificate\\bg.png")
+    org_logo_base64 = encode_image_to_base64("C:\\learning\PySam\\certificate\\mtd.png")
+    signature_image_base64 = encode_image_to_base64("C:\\learning\\PySam\\certificate\\my_sign.jpg")
     
     for index, row in data.iterrows():
         name = row['name']
@@ -210,7 +210,7 @@ def generate_certificate(data, output_dir):
 # Main function
 if __name__ == "__main__":
     input_csv = "C:\\learning\\PySam\\certificate\\data.csv"  # Path to CSV file
-    output_directory = "C:\\learning\\PySam\\certificate\\html_certificates"  # Output directory
+    output_directory = "C:\\learning\\PySam\\certificate\\html_certificates\\"  # Output directory
     
     # Read data and generate certificates
     data = read_csv(input_csv)
