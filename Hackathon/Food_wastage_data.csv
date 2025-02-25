@@ -1,0 +1,141 @@
+Hostel Name,City,State,Residents,Meal Type,Total Food Cooked (kg),Food Consumed (kg),Food Wasted (kg),Reasons for Wastage,Waste Disposal Method,Date,Meal Prepared,Percentage Wasted (%),Type of Cuisine
+LMN Engineering Hostel,City 1,Andhra Pradesh,448,Dinner,156,100,56,Leftovers,Dumped,2024-4-12,Chole-Bhature,35.9,Punjabi Cuisine
+XYZ Girls Hostel,City 2,Andhra Pradesh,314,Dinner,137,134,3,Student absenteeism,Donated,2024-3-4,Khichdi,2.19,Gujarati/Bihari Cuisine
+DEF Medical Hostel,City 3,Andhra Pradesh,357,Lunch,87,53,34,Student absenteeism,Dumped,2024-11-30,Biryani,39.8,Hyderabadi/Mughlai Cuisine
+ABC Boys Hostel,City 4,Andhra Pradesh,413,Lunch,138,130,8,Large portions,Donated,2024-11-9,Rice-Dal,5.8,South Indian/Andhra Cuisine
+XYZ Girls Hostel,City 5,Andhra Pradesh,287,Dinner,100,62,38,Leftovers,Donated,2024-2-28,Chole-Bhature,38.0,Punjabi Cuisine
+DEF Medical Hostel,City 1,Arunachal Pradesh,428,Dinner,67,43,24,Excess cooking,Composted,2024-11-5,Dal Tadka-Rice,35.82,
+XYZ Girls Hostel,City 2,Arunachal Pradesh,364,Lunch,102,62,40,Student absenteeism,Donated,2025-2-10,Biryani,39.22,Hyderabadi/Mughlai Cuisine
+LMN Engineering Hostel,City 3,Arunachal Pradesh,363,Dinner,84,63,21,Excess cooking,Composted,2024-10-26,Paneer Curry-Roti,25.0,
+LMN Engineering Hostel,City 4,Arunachal Pradesh,11,Lunch,183,162,21,Unappetizing food,Composted,2024-9-28,Curry-Rice,11.48,
+DEF Medical Hostel,City 5,Arunachal Pradesh,290,Lunch,93,88,5,Unappetizing food,Composted,2025-1-6,Thali,5.38,
+LMN Engineering Hostel,City 1,Assam,369,Dinner,97,72,25,Student absenteeism,Dumped,2024-10-21,Khichdi,25.77,Gujarati/Bihari Cuisine
+DEF Medical Hostel,City 2,Assam,37,Breakfast,131,124,7,Leftovers,Composted,2024-11-28,Dosa,5.34,
+ABC Boys Hostel,City 3,Assam,351,Breakfast,90,82,8,Leftovers,Dumped,2024-6-25,Dosa,8.89,
+ABC Boys Hostel,City 4,Assam,426,Breakfast,137,82,55,Student absenteeism,Donated,2024-10-31,Dosa,40.15,
+PQR University Hostel,City 5,Assam,180,Dinner,82,53,29,Unappetizing food,Donated,2024-6-3,Khichdi,35.37,Gujarati/Bihari Cuisine
+XYZ Girls Hostel,City 1,Bihar,140,Dinner,121,83,38,Unappetizing food,Dumped,2024-11-7,Khichdi,31.4,Gujarati/Bihari Cuisine
+DEF Medical Hostel,City 2,Bihar,198,Lunch,84,50,34,Large portions,Dumped,2024-7-30,Chapati-Sabzi,40.48,
+PQR University Hostel,City 3,Bihar,356,Breakfast,191,140,51,Excess cooking,Donated,2025-1-23,Bread-Butter,26.7,
+XYZ Girls Hostel,City 4,Bihar,141,Breakfast,112,98,14,Excess cooking,Dumped,2024-11-25,Idli-Sambar,12.5,Tamil Cuisine
+LMN Engineering Hostel,City 5,Bihar,321,Breakfast,192,157,35,Leftovers,Dumped,2024-5-10,Dosa,18.23,
+PQR University Hostel,City 1,Chhattisgarh,342,Lunch,77,47,30,Unappetizing food,Dumped,2024-6-10,Chapati-Sabzi,38.96,
+ABC Boys Hostel,City 2,Chhattisgarh,233,Lunch,124,11,23,Excess cooking,Donated,2024-8-23,Rice-Dal,18.55,South Indian/Andhra Cuisine
+ABC Boys Hostel,City 3,Chhattisgarh,484,Breakfast,76,74,2,Excess cooking,Dumped,2024-7-7,Paratha-Curd,2.63,
+ABC Boys Hostel,City 4,Chhattisgarh,358,Dinner,186,172,14,Leftovers,Dumped,2025-1-5,Khichdi,7.53,Gujarati/Bihari Cuisine
+PQR University Hostel,City 5,Chhattisgarh,333,Dinner,108,95,13,Excess cooking,Dumped,2025-1-23,Dal Tadka-Rice,12.4,
+ABC Boys Hostel,City 1,Goa,151,Lunch,88,53,35,Large portions,Dumped,2025-2-22,Rice-Dal,39.77,South Indian/Andhra Cuisine
+DEF Medical Hostel,City 2,Goa,212,Breakfast,162,98,64,Unappetizing food,Composted,2024-11-14,Idli-Sambar,39.51,Tamil Cuisine
+DEF Medical Hostel,City 3,Goa,323,Breakfast,178,124,54,Unappetizing food,Dumped,2024-10-12,Idli-Sambar,30.34,Tamil Cuisine
+LMN Engineering Hostel,City 4,Goa,317,Lunch,117,80,37,Large portions,Dumped,2024-11-20,Rice-Dal,31.62,South Indian/Andhra Cuisine
+DEF Medical Hostel,City 5,Goa,471,Lunch,188,127,61,Excess cooking,Dumped,2024-11-23,Rice-Dal,32.45,South Indian/Andhra Cuisine
+LMN Engineering Hostel,City 1,Gujarat,286,Lunch,142,87,55,Student absenteeism,Donated,2024-8-24,Chapati-Sabzi,38.73,
+LMN Engineering Hostel,City 2,Gujarat,445,Dinner,196,136,60,Student absenteeism,Dumped,2024-5-13,Dal Tadka-Rice,30.61,
+ABC Boys Hostel,City 3,Gujarat,227,Dinner,131,117,14,Excess cooking,Donated,2024-6-17,Khichdi,10.69,Gujarati/Bihari Cuisine
+LMN Engineering Hostel,City 4,Gujarat,250,Dinner,91,88,3,Student absenteeism,Composted,2024-6-7,Khichdi,3.3,Gujarati/Bihari Cuisine
+ABC Boys Hostel,City 5,Gujarat,159,Breakfast,51,30,21,Student absenteeism,Dumped,2024-9-26,Poha,41.18,
+DEF Medical Hostel,City 1,Haryana,259,Dinner,58,42,16,Large portions,Donated,2025-1-14,Khichdi,27.59,Gujarati/Bihari Cuisine
+PQR University Hostel,City 2,Haryana,251,Lunch,169,133,36,Student absenteeism,Donated,2024-7-18,Chapati-Sabzi,21.3,
+ABC Boys Hostel,City 3,Haryana,23,Lunch,161,120,41,Leftovers,Composted,2025-1-28,Thali,25.47,
+XYZ Girls Hostel,City 4,Haryana,293,Lunch,117,102,15,Leftovers,Donated,2024-8-13,Curry-Rice,12.82,
+PQR University Hostel,City 5,Haryana,227,Breakfast,164,119,45,Leftovers,Donated,2024-12-14,Idli-Sambar,27.44,Tamil Cuisine
+PQR University Hostel,City 1,Himachal Pradesh,126,Lunch,70,42,28,Student absenteeism,Donated,2024-8-31,Thali,40.0,
+ABC Boys Hostel,City 2,Himachal Pradesh,416,Dinner,53,33,20,Excess cooking,Dumped,2024-3-5,Khichdi,37.74,Gujarati/Bihari Cuisine
+LMN Engineering Hostel,City 3,Himachal Pradesh,319,Lunch,95,62,33,Large portions,Dumped,2024-6-6,Thali,34.74,
+DEF Medical Hostel,City 4,Himachal Pradesh,379,Breakfast,95,87,8,Large portions,Dumped,2024-5-10,Dosa,8.42,
+LMN Engineering Hostel,City 5,Himachal Pradesh,290,Breakfast,116,86,30,Excess cooking,Composted,2024-6-1,Idli-Sambar,25.86,Tamil Cuisine
+XYZ Girls Hostel,City 1,Jharkhand,422,Lunch,73,60,13,Unappetizing food,Donated,2024-9-21,Rice-Dal,17.81,South Indian/Andhra Cuisine
+PQR University Hostel,City 2,Jharkhand,485,Lunch,66,46,20,Excess cooking,Dumped,2024-10-22,Curry-Rice,30.3,
+PQR University Hostel,City 3,Jharkhand,345,Dinner,75,47,28,Unappetizing food,Dumped,2024-10-19,Dal Tadka-Rice,37.33,
+DEF Medical Hostel,City 4,Jharkhand,415,Lunch,184,166,18,Student absenteeism,Dumped,2024-12-14,Biryani,9.78,Hyderabadi/Mughlai Cuisine
+LMN Engineering Hostel,City 5,Jharkhand,420,Lunch,193,128,65,Student absenteeism,Donated,2024-3-13,Rice-Dal,33.68,South Indian/Andhra Cuisine
+LMN Engineering Hostel,City 1,Karnataka,453,Lunch,81,70,11,Large portions,Dumped,2025-2-13,Thali,13.58,
+XYZ Girls Hostel,City 2,Karnataka,162,Lunch,174,125,49,Unappetizing food,Composted,2024-3-7,Chapati-Sabzi,28.16,
+ABC Boys Hostel,City 3,Karnataka,279,Lunch,119,85,34,Large portions,Dumped,2024-12-9,Chapati-Sabzi,28.57,
+ABC Boys Hostel,City 4,Karnataka,363,Breakfast,19,18,1,Student absenteeism,Dumped,2024-7-2,Dosa,0.92,
+LMN Engineering Hostel,City 5,Karnataka,361,Breakfast,165,145,20,Large portions,Donated,2024-5-11,Poha,12.12,
+LMN Engineering Hostel,City 1,Kerala,243,Breakfast,163,126,37,Large portions,Dumped,2024-2-28,Paratha-Curd,22.7,
+PQR University Hostel,City 2,Kerala,191,Lunch,139,119,20,Unappetizing food,Dumped,2024-12-21,Rice-Dal,14.39,South Indian/Andhra Cuisine
+ABC Boys Hostel,City 3,Kerala,495,Breakfast,178,163,15,Unappetizing food,Dumped,2024-6-13,Dosa,8.43,
+XYZ Girls Hostel,City 4,Kerala,195,Lunch,167,147,20,Excess cooking,Dumped,2024-11-6,Thali,11.98,
+DEF Medical Hostel,City 5,Kerala,484,Breakfast,118,91,27,Leftovers,Donated,2025-1-14,Dosa,22.88,
+PQR University Hostel,City 1,Madhya Pradesh,175,Lunch,193,165,28,Leftovers,Composted,2024-10-29,Thali,14.51,
+ABC Boys Hostel,City 2,Madhya Pradesh,384,Lunch,118,116,2,Excess cooking,Composted,2024-3-5,Curry-Rice,1.69,
+LMN Engineering Hostel,City 3,Madhya Pradesh,33,Lunch,134,118,16,Student absenteeism,Dumped,2025-2-19,Curry-Rice,11.94,
+DEF Medical Hostel,City 4,Madhya Pradesh,122,Lunch,59,56,3,Leftovers,Composted,2025-1-2,Curry-Rice,5.8,
+LMN Engineering Hostel,City 5,Madhya Pradesh,322,Lunch,196,174,22,Excess cooking,Dumped,2024-4-1,Thali,11.22,
+DEF Medical Hostel,City 1,Maharashtra,13,Dinner,51,46,5,Student absenteeism,Donated,2024-6-15,Chole-Bhature,9.8,Punjabi Cuisine
+LMN Engineering Hostel,City 2,Maharashtra,251,Lunch,173,135,38,Excess cooking,Dumped,2024-8-25,Curry-Rice,21.97,
+PQR University Hostel,City 3,Maharashtra,200,Dinner,114,100,14,Unappetizing food,Donated,2024-5-20,Veg Pulao,12.28,
+LMN Engineering Hostel,City 4,Maharashtra,384,Breakfast,61,49,12,Unappetizing food,Dumped,2024-5-31,Poha,19.67,
+PQR University Hostel,City 5,Maharashtra,341,Dinner,130,13,27,Leftovers,Composted,2024-5-24,Khichdi,20.77,Gujarati/Bihari Cuisine
+XYZ Girls Hostel,City 1,Manipur,189,Lunch,164,14,60,Student absenteeism,Composted,2024-8-14,Biryani,36.59,Hyderabadi/Mughlai Cuisine
+DEF Medical Hostel,City 2,Manipur,213,Breakfast,124,102,22,Student absenteeism,Dumped,2025-1-1,Bread-Butter,17.74,
+DEF Medical Hostel,City 3,Manipur,348,Lunch,150,98,52,Large portions,Dumped,2024-4-10,Thali,34.67,
+PQR University Hostel,City 4,Manipur,135,Lunch,145,110,35,Leftovers,Dumped,2024-12-5,Chapati-Sabzi,24.14,
+DEF Medical Hostel,City 5,Manipur,378,Breakfast,148,128,20,Excess cooking,Dumped,2024-9-29,Poha,13.51,
+LMN Engineering Hostel,City 1,Meghalaya,467,Breakfast,135,93,42,Large portions,Donated,2025-1-27,Poha,31.11,
+ABC Boys Hostel,City 2,Meghalaya,199,Breakfast,196,192,4,Excess cooking,Donated,2025-2-6,Dosa,2.4,
+LMN Engineering Hostel,City 3,Meghalaya,35,Dinner,177,157,20,Large portions,Composted,2024-7-11,Chole-Bhature,11.3,Punjabi Cuisine
+DEF Medical Hostel,City 4,Meghalaya,168,Dinner,189,137,52,Student absenteeism,Donated,2024-11-26,Khichdi,27.51,Gujarati/Bihari Cuisine
+DEF Medical Hostel,City 5,Meghalaya,152,Dinner,193,171,22,Leftovers,Dumped,2024-5-5,Veg Pulao,11.4,
+XYZ Girls Hostel,City 1,Mizoram,285,Dinner,191,118,73,Large portions,Donated,2025-1-7,Veg Pulao,38.22,
+DEF Medical Hostel,City 2,Mizoram,334,Dinner,195,192,3,Excess cooking,Composted,2024-9-16,Khichdi,1.54,Gujarati/Bihari Cuisine
+XYZ Girls Hostel,City 3,Mizoram,352,Lunch,56,46,10,Leftovers,Composted,2024-9-9,Thali,17.86,
+ABC Boys Hostel,City 4,Mizoram,382,Lunch,54,36,18,Large portions,Dumped,2024-2-26,Chapati-Sabzi,33.33,
+ABC Boys Hostel,City 5,Mizoram,441,Breakfast,120,96,24,Leftovers,Composted,2024-9-2,Dosa,20.0,
+LMN Engineering Hostel,City 1,Nagaland,374,Breakfast,157,147,10,Large portions,Composted,2024-9-19,Paratha-Curd,6.37,
+XYZ Girls Hostel,City 2,Nagaland,118,Dinner,175,171,4,Leftovers,Dumped,2024-10-19,Paneer Curry-Roti,2.29,
+XYZ Girls Hostel,City 3,Nagaland,319,Lunch,17,83,24,Student absenteeism,Dumped,2024-5-24,Rice-Dal,22.43,South Indian/Andhra Cuisine
+ABC Boys Hostel,City 4,Nagaland,100,Dinner,141,140,1,Student absenteeism,Dumped,2024-11-20,Chole-Bhature,0.71,Punjabi Cuisine
+ABC Boys Hostel,City 5,Nagaland,411,Breakfast,166,14,62,Unappetizing food,Dumped,2024-9-18,Poha,37.35,
+DEF Medical Hostel,City 1,Odisha,416,Dinner,198,197,1,Leftovers,Donated,2024-7-31,Chole-Bhature,0.51,Punjabi Cuisine
+LMN Engineering Hostel,City 2,Odisha,328,Dinner,196,136,60,Excess cooking,Composted,2024-8-27,Chole-Bhature,30.61,Punjabi Cuisine
+ABC Boys Hostel,City 3,Odisha,44,Lunch,192,145,47,Excess cooking,Dumped,2024-7-14,Thali,24.48,
+PQR University Hostel,City 4,Odisha,243,Dinner,61,45,16,Student absenteeism,Dumped,2024-4-17,Chole-Bhature,26.23,Punjabi Cuisine
+XYZ Girls Hostel,City 5,Odisha,447,Lunch,185,168,17,Student absenteeism,Composted,2024-9-9,Curry-Rice,9.19,
+LMN Engineering Hostel,City 1,Punjab,319,Breakfast,90,89,1,Large portions,Composted,2024-9-2,Dosa,1.11,
+ABC Boys Hostel,City 2,Punjab,300,Breakfast,190,159,31,Large portions,Dumped,2024-3-28,Paratha-Curd,16.32,
+XYZ Girls Hostel,City 3,Punjab,470,Breakfast,96,81,15,Unappetizing food,Composted,2024-6-15,Idli-Sambar,15.62,Tamil Cuisine
+XYZ Girls Hostel,City 4,Punjab,350,Breakfast,54,32,22,Excess cooking,Composted,2024-7-4,Bread-Butter,40.74,
+ABC Boys Hostel,City 5,Punjab,366,Breakfast,75,69,6,Large portions,Donated,2024-8-30,Paratha-Curd,8.0,
+ABC Boys Hostel,City 1,Rajasthan,197,Breakfast,148,88,60,Leftovers,Donated,2024-9-25,Idli-Sambar,40.54,Tamil Cuisine
+LMN Engineering Hostel,City 2,Rajasthan,296,Dinner,182,111,71,Leftovers,Donated,2024-3-4,Khichdi,39.1,Gujarati/Bihari Cuisine
+DEF Medical Hostel,City 3,Rajasthan,152,Breakfast,132,95,37,Leftovers,Composted,2024-7-29,Dosa,28.3,
+ABC Boys Hostel,City 4,Rajasthan,465,Breakfast,100,72,28,Student absenteeism,Composted,2025-1-21,Idli-Sambar,28.0,Tamil Cuisine
+ABC Boys Hostel,City 5,Rajasthan,468,Lunch,141,114,27,Unappetizing food,Composted,2024-7-1,Biryani,19.15,Hyderabadi/Mughlai Cuisine
+XYZ Girls Hostel,City 1,Sikkim,217,Dinner,172,152,20,Student absenteeism,Dumped,2024-9-4,Paneer Curry-Roti,11.63,
+LMN Engineering Hostel,City 2,Sikkim,488,Lunch,16,79,27,Leftovers,Dumped,2024-6-20,Curry-Rice,25.47,
+XYZ Girls Hostel,City 3,Sikkim,174,Dinner,152,128,24,Student absenteeism,Composted,2024-4-19,Dal Tadka-Rice,15.79,
+XYZ Girls Hostel,City 4,Sikkim,197,Lunch,79,61,18,Large portions,Donated,2024-12-18,Chapati-Sabzi,22.78,
+XYZ Girls Hostel,City 5,Sikkim,47,Breakfast,128,15,23,Unappetizing food,Donated,2024-11-20,Bread-Butter,17.97,
+ABC Boys Hostel,City 1,Tamil Nadu,232,Breakfast,181,117,64,Excess cooking,Composted,2024-3-10,Idli-Sambar,35.36,Tamil Cuisine
+ABC Boys Hostel,City 2,Tamil Nadu,439,Breakfast,83,54,29,Leftovers,Composted,2024-6-24,Idli-Sambar,34.94,Tamil Cuisine
+DEF Medical Hostel,City 3,Tamil Nadu,225,Dinner,92,65,27,Large portions,Donated,2024-9-1,Khichdi,29.35,Gujarati/Bihari Cuisine
+ABC Boys Hostel,City 4,Tamil Nadu,250,Dinner,129,17,22,Large portions,Composted,2025-1-17,Dal Tadka-Rice,17.5,
+LMN Engineering Hostel,City 5,Tamil Nadu,459,Breakfast,145,89,56,Large portions,Dumped,2024-4-17,Idli-Sambar,38.62,Tamil Cuisine
+XYZ Girls Hostel,City 1,Telangana,160,Lunch,100,78,22,Leftovers,Dumped,2024-9-5,Curry-Rice,22.0,
+XYZ Girls Hostel,City 2,Telangana,191,Lunch,110,87,23,Leftovers,Composted,2024-3-24,Rice-Dal,20.91,South Indian/Andhra Cuisine
+ABC Boys Hostel,City 3,Telangana,232,Breakfast,61,49,12,Unappetizing food,Dumped,2024-6-17,Paratha-Curd,19.67,
+XYZ Girls Hostel,City 4,Telangana,400,Dinner,122,98,24,Excess cooking,Donated,2024-7-29,Chole-Bhature,19.67,Punjabi Cuisine
+ABC Boys Hostel,City 5,Telangana,313,Dinner,15,92,13,Large portions,Donated,2024-4-13,Paneer Curry-Roti,12.38,
+DEF Medical Hostel,City 1,Tripura,436,Lunch,85,51,34,Excess cooking,Donated,2024-12-29,Curry-Rice,40.0,
+DEF Medical Hostel,City 2,Tripura,279,Dinner,96,78,18,Unappetizing food,Donated,2024-4-26,Veg Pulao,18.75,
+XYZ Girls Hostel,City 3,Tripura,464,Lunch,63,60,3,Large portions,Donated,2024-4-26,Rice-Dal,4.76,South Indian/Andhra Cuisine
+PQR University Hostel,City 4,Tripura,210,Dinner,156,139,17,Student absenteeism,Dumped,2024-11-30,Khichdi,10.9,Gujarati/Bihari Cuisine
+XYZ Girls Hostel,City 5,Tripura,393,Dinner,164,112,52,Excess cooking,Donated,2025-2-2,Chole-Bhature,31.71,Punjabi Cuisine
+DEF Medical Hostel,City 1,Uttar Pradesh,127,Lunch,88,68,20,Unappetizing food,Composted,2024-8-27,Rice-Dal,22.73,South Indian/Andhra Cuisine
+LMN Engineering Hostel,City 2,Uttar Pradesh,124,Breakfast,62,56,6,Excess cooking,Composted,2024-9-8,Paratha-Curd,9.68,
+PQR University Hostel,City 3,Uttar Pradesh,332,Breakfast,195,150,45,Excess cooking,Donated,2024-7-16,Poha,23.8,
+XYZ Girls Hostel,City 4,Uttar Pradesh,200,Lunch,75,46,29,Large portions,Donated,2024-4-4,Chapati-Sabzi,38.67,
+DEF Medical Hostel,City 5,Uttar Pradesh,328,Breakfast,82,70,12,Leftovers,Composted,2024-10-2,Paratha-Curd,14.63,
+LMN Engineering Hostel,City 1,Uttarakhand,449,Dinner,111,95,16,Excess cooking,Donated,2024-6-27,Khichdi,14.41,Gujarati/Bihari Cuisine
+PQR University Hostel,City 2,Uttarakhand,342,Dinner,89,88,1,Unappetizing food,Donated,2025-1-24,Veg Pulao,1.12,
+LMN Engineering Hostel,City 3,Uttarakhand,434,Lunch,167,150,17,Excess cooking,Composted,2024-8-19,Biryani,10.18,Hyderabadi/Mughlai Cuisine
+PQR University Hostel,City 4,Uttarakhand,491,Lunch,93,59,34,Unappetizing food,Composted,2024-11-28,Rice-Dal,36.56,South Indian/Andhra Cuisine
+LMN Engineering Hostel,City 5,Uttarakhand,374,Breakfast,69,57,12,Student absenteeism,Donated,2024-5-24,Poha,17.39,
+ABC Boys Hostel,City 1,West Bengal,189,Lunch,113,14,9,Leftovers,Composted,2024-10-28,Biryani,7.96,Hyderabadi/Mughlai Cuisine
+PQR University Hostel,City 2,West Bengal,455,Breakfast,52,31,21,Unappetizing food,Composted,2024-10-18,Bread-Butter,40.38,
+DEF Medical Hostel,City 3,West Bengal,237,Lunch,62,44,18,Unappetizing food,Dumped,2024-2-26,Biryani,29.3,Hyderabadi/Mughlai Cuisine
+DEF Medical Hostel,City 4,West Bengal,428,Breakfast,58,44,14,Large portions,Composted,2024-6-29,Poha,24.14,
+ABC Boys Hostel,City 5,West Bengal,168,Lunch,127,86,41,Excess cooking,Composted,2024-6-11,Rice-Dal,32.28,South Indian/Andhra Cuisine

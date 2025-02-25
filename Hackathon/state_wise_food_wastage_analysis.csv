@@ -1,0 +1,29 @@
+State,Total_Food_Cooked,Total_Food_Consumed,Total_Food_Wasted,Avg_Wastage_Percentage,Common_Wastage_Reason
+Andhra Pradesh,618,479,139,27.8,Leftovers
+Arunachal Pradesh,529,418,111,22.2,Excess cooking
+Assam,537,413,124,24.8,Leftovers
+Bihar,700,528,172,34.4,Excess cooking
+Chhattisgarh,571,489,82,16.4,Excess cooking
+Goa,733,482,251,50.2,Large portions
+Gujarat,611,458,153,30.6,Student absenteeism
+Haryana,669,516,153,30.6,Leftovers
+Himachal Pradesh,429,310,119,23.8,Excess cooking
+Jharkhand,591,447,144,28.8,Student absenteeism
+Karnataka,648,533,115,23.0,Large portions
+Kerala,765,646,119,23.8,Unappetizing food
+Madhya Pradesh,700,629,71,14.2,Excess cooking
+Maharashtra,529,433,96,19.2,Unappetizing food
+Manipur,731,542,189,37.8,Student absenteeism
+Meghalaya,890,750,140,28.0,Large portions
+Mizoram,616,488,128,25.6,Large portions
+Nagaland,746,645,101,20.2,Student absenteeism
+Odisha,832,691,141,28.2,Excess cooking
+Punjab,505,430,75,15.0,Large portions
+Rajasthan,703,480,223,44.6,Leftovers
+Sikkim,637,525,112,22.4,Student absenteeism
+Tamil Nadu,630,432,198,39.6,Large portions
+Telangana,498,404,94,18.8,Leftovers
+Tripura,564,440,124,24.8,Excess cooking
+Uttar Pradesh,502,390,112,22.4,Excess cooking
+Uttarakhand,529,449,80,16.0,Excess cooking
+West Bengal,412,309,103,20.6,Unappetizing food
