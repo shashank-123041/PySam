@@ -205,7 +205,7 @@ class Hostel_food_wastage_managemnet:
         plt.tight_layout()
         plt.show()
 
-    #Done by Anish U(1RN23CS027)
+    #Done by Anish Udupa N(1RN23CS027)
     def graph_leftover_quantity(self):
         #Average Leftover Quantity per Hostel
         file_path = os.path.join(os.getcwd(),"data2.csv")
