@@ -4,12 +4,19 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import sys
 import numpy as np
+import os
+
+def clear_screen():
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
 
 class Hostel_food_wastage_managemnet:
 
-    def statewise_food_wastage_analysis(self):
-        
-        file_path = "C:\\learning\\PySam\\Hackathon\\state_wise_food_wastage_analysis.csv"
+    def graph_state_cooked_consumed_wasted(self):
+        file_path = os.path.join(os.getcwd(), 'state_wise_food_wastage_analysis.csv')
         df = pd.read_csv(file_path)
 
         sns.set_style("whitegrid")
@@ -17,7 +24,7 @@ class Hostel_food_wastage_managemnet:
         df_melted = df.melt(id_vars=["State"], 
                             value_vars=["Total_Food_Cooked", "Total_Food_Consumed", "Total_Food_Wasted"], 
                             var_name="Category", 
-                            value_name="Food Quantity (kg)")
+                                value_name="Food Quantity (kg)")
 
         plt.figure(figsize=(12, 6))
         sns.barplot(x="State", y="Food Quantity (kg)", hue="Category", data=df_melted, palette="viridis")
@@ -28,6 +35,17 @@ class Hostel_food_wastage_managemnet:
         plt.legend(title="Category")
         plt.show()
 
+
+    def graph_avg_food_waste_state(self):
+        file_path = os.path.join(os.getcwd(), 'state_wise_food_wastage_analysis.csv')
+        df = pd.read_csv(file_path)
+
+        sns.set_style("whitegrid")
+
+        df_melted = df.melt(id_vars=["State"], 
+                            value_vars=["Total_Food_Cooked", "Total_Food_Consumed", "Total_Food_Wasted"], 
+                            var_name="Category", 
+                                value_name="Food Quantity (kg)")
         plt.figure(figsize=(10, 8))
         sns.barplot(y=df["State"], x=df["Avg_Wastage_Percentage"], palette="viridis")  
         plt.title("Average Percentage of Food Wasted per State", fontsize=14, fontweight="bold")
@@ -36,17 +54,13 @@ class Hostel_food_wastage_managemnet:
         plt.grid(axis="x", linestyle="--", alpha=0.7)
         plt.show()
     
-    def hostel_food_management_analysis(self):
 
-        file_path = "C:\\learning\\PySam\\Hackathon\\food_wastage_sheet.csv"
+
+    def graph_food_consumption_vs_wastage(self):
+        file_path = os.path.join(os.getcwd(),'food_wastage_sheet.csv')
         df = pd.read_csv(file_path)
         df.columns = df.columns.str.strip()
         required_columns = ['Total Food Prepared (kg)', 'Food Served (kg)', 'Food Wasted (kg)']
-        for col in required_columns:
-            if col not in df.columns:
-                print(f"Error: '{col}' column not found in the dataset!")
-                print("Available columns:", df.columns)
-                exit()
         total_prepared = df['Total Food Prepared (kg)'].sum()
         total_consumed = df['Food Served (kg)'].sum()
         total_wasted = df['Food Wasted (kg)'].sum()
@@ -58,7 +72,9 @@ class Hostel_food_wastage_managemnet:
         plt.title("Food Consumption vs Wastage")
         plt.show()
 
-        data=pd.read_csv("C:\\learning\\PySam\\Hackathon\\Food_wastage_data.csv")
+    def graph_meal_waste(self):
+        file_path = os.path.join(os.getcwd(),'food_wastage_data.csv')
+        data=pd.read_csv(file_path)
         meal_prepared=data["Meal Prepared"]
         food_wasted=data["Food Wasted (kg)"]
         plt.figure()
@@ -68,6 +84,10 @@ class Hostel_food_wastage_managemnet:
         plt.ylabel("Food Wasted [kg]")
         plt.show()
 
+
+    def graph_cuisine_waste(self):
+        file_path = os.path.join(os.getcwd(),'food_wastage_data.csv')
+        data=pd.read_csv(file_path)
         cuisine_waste = data.groupby("Type of Cuisine")["Food Wasted (kg)"].sum()
         plt.figure()
         plt.pie(cuisine_waste,labels=cuisine_waste.index,autopct="%3.2f%%")
@@ -75,6 +95,10 @@ class Hostel_food_wastage_managemnet:
         plt.axis()
         plt.show()
 
+
+    def graph_meal_category_3d(self):
+        file_path = os.path.join(os.getcwd(),'food_wastage_data.csv')
+        data=pd.read_csv(file_path)
         column_name = "Food Wasted (kg)" 
         meal_waste = data.groupby("Meal Type")[column_name].sum().reset_index()
 
@@ -101,11 +125,9 @@ class Hostel_food_wastage_managemnet:
         ax.set_xticklabels(meal_waste["Meal Type"])
         plt.show()
 
-        file_path = "C:\\learning\\PySam\\Hackathon\\food_wastage_sheet.csv"
+    def graph_reasons_for_waste(self):
+        file_path = os.path.join(os.getcwd(),"food_wastage_sheet.csv")
         df = pd.read_csv(file_path)
-        if 'Reasons for Waste' not in df.columns:
-            print("Error: 'Reasons for Waste' column not found in the dataset!")
-            exit()
         waste_reason_counts = df['Reasons for Waste'].value_counts()
         plt.figure(figsize=(10, 6))
         sns.barplot(x=waste_reason_counts.index, y=waste_reason_counts.values, palette="viridis")
@@ -117,10 +139,9 @@ class Hostel_food_wastage_managemnet:
 
         
 
-    def food_wastage_prevention_steps(self):
-
+    def graph_food_quality_rating(self):
         #Average food quality rating
-        file_path = 'C:\\learning\\PySam\\Hackathon\\data2.csv'
+        file_path = os.path.join(os.getcwd(),"data2.csv")
         df = pd.read_csv(file_path)
         df.columns = df.columns.str.strip().str.replace("'", "")
         df = df[~df['Date'].str.contains("#", na=False)]
@@ -134,28 +155,33 @@ class Hostel_food_wastage_managemnet:
         sns.barplot(data=grouped, x='MealType', y='QualityCheck', hue='HostelName', palette='Set2')
         plt.title('Average Food Quality Rating per Hostel by Meal Time')
         plt.xlabel('Meal Time')
-        plt.ylabel('Average Quality Check Rating')
+        plt.ylabel('Average Food Quality Rating')
         plt.legend(title='Hostel Name', bbox_to_anchor=(1.05, 1), loc='upper left')
         plt.tight_layout()
         plt.show()
 
+
+    def graph_transport_cost(self):
         #Average Transportation Cost Incurred for Different NGOs
-        df = pd.read_csv('C:\\learning\\PySam\\Hackathon\\data2.csv')
-        df['NGOName'] = df["'NGOName'"].str.strip().str.replace("'", "", regex=True)
-        df['CostIncurred'] = pd.to_numeric(df["'CostIncurred'"].str.strip().str.replace("'", "", regex=True))
+        file_path = os.path.join(os.getcwd(),"data2.csv")
+        df = pd.read_csv(file_path)
+        df.columns = df.columns.str.strip().str.replace("'", "", regex=True)
+        df['NGOName'] = df['NGOName'].str.strip().str.replace("'", "", regex=True)
+        df['CostIncurred'] = pd.to_numeric(df["CostIncurred"].str.strip().str.replace("'", "", regex=True))
         cost_by_ngo = df.groupby('NGOName')['CostIncurred'].sum().reset_index()
         plt.figure(figsize=(10, 6))
         plt.bar(cost_by_ngo['NGOName'], cost_by_ngo['CostIncurred'], color='skyblue')
         plt.xlabel('NGO Name')
-        plt.ylabel('Average Cost Incurred')
+        plt.ylabel('Average Cost Incurred(in Rupees)')
         plt.title('Average Transportation Cost Incurred for Different NGOs')
         plt.xticks(rotation=45, ha='right')
         plt.grid(axis='y', linestyle='--', alpha=0.7)
         plt.tight_layout()
         plt.show()
 
+    def graph_leftover_quantity(self):
         #Average Leftover Quantity per Hostel
-        file_path = 'C:\\learning\\PySam\\Hackathon\\data2.csv'
+        file_path = os.path.join(os.getcwd(),"data2.csv")
         df = pd.read_csv(file_path)
         df.columns = df.columns.str.strip().str.replace("'", "")
         df = df[~df['Date'].str.contains("#", na=False)]
@@ -173,14 +199,15 @@ class Hostel_food_wastage_managemnet:
         plt.tight_layout()
         plt.show()
 
+
+    def graph_ngo_feedback(self):
         #NGO feedback
-        file_path = 'C:\\learning\\PySam\\Hackathon\\data2.csv'
+        file_path = os.path.join(os.getcwd(),"data2.csv")
         df = pd.read_csv(file_path)
         df.columns = df.columns.str.strip().str.replace("'", "")
         df = df[~df['Date'].str.contains("#", na=False)]
         df['NGOName'] = df['NGOName'].str.strip().str.replace("'", "")
         df['NGOFeedback'] = df['NGOFeedback'].str.strip().str.replace("'", "")
-        print("Unique NGO Feedback types:", df['NGOFeedback'].unique())
         feedback_counts = df.groupby(['NGOName', 'NGOFeedback']).size().reset_index(name='Count')
         plt.figure(figsize=(12, 7))
         sns.barplot(data=feedback_counts, x='NGOName', y='Count', hue='NGOFeedback', palette='viridis')
@@ -192,8 +219,10 @@ class Hostel_food_wastage_managemnet:
         plt.tight_layout()
         plt.show()
 
+
+    def graph_transport_mode_usage(self):
         #Transport Mode Usage for Donations
-        file_path = 'C:\\learning\\PySam\\Hackathon\\data2.csv'
+        file_path = os.path.join(os.getcwd(),"data2.csv")
         df = pd.read_csv(file_path)
         df.columns = df.columns.str.strip().str.replace("'", "")
         df['TransportMode'] = df['TransportMode'].str.strip().str.replace("'", "")
@@ -208,6 +237,7 @@ class Hostel_food_wastage_managemnet:
 def main():
     obj = Hostel_food_wastage_managemnet()
     while True:
+        clear_screen()
         print("\nFood Wastage Management System")
         print("1. State-wise Food Wastage Analysis")
         print("2. Hostel Food Wastage Analysis")
@@ -216,18 +246,80 @@ def main():
 
         try:
             choice = int(input("Enter your choice: "))
-            if choice==0:
+            if choice == 0:
                 sys.exit("Program terminated!!")
+
             elif choice == 1:
-                obj.statewise_food_wastage_analysis()
+                while True:
+                    clear_screen()
+                    print("\n--- State-wise Food Wastage Analysis ---")
+                    print("1. Total Food Cooked, Consumed, and Wasted per State (Bar Graph)")
+                    print("2. Average Percentage of Food Wasted per State (Horizontal Bar Graph)")
+                    print("0. Go Back to Main Menu")
+
+                    sub_choice = int(input("Enter your choice: "))
+                    if sub_choice == 1:
+                        obj.graph_state_cooked_consumed_wasted()
+                    elif sub_choice == 2:
+                        obj.graph_avg_food_waste_state()
+                    else:
+                        break
+
             elif choice == 2:
-                obj.hostel_food_management_analysis()
+                while True:
+                    clear_screen()
+                    print("\n--- Hostel Food Wastage Analysis ---")
+                    print("1. Food Consumption vs Wastage (Pie Chart)")
+                    print("2. Food Wastage by Meal (Bar Graph)")
+                    print("3. Food Wastage by Cuisine Type (Pie Chart)")
+                    print("4. Food Wastage by Meal Category (3D Bar Graph)")
+                    print("5. Reasons for Food Waste (Bar Graph)")
+                    print("0. Go Back to Main Menu")
+
+                    sub_choice = int(input("Enter your choice: "))
+                    if sub_choice == 1:
+                        obj.graph_food_consumption_vs_wastage()
+                    elif sub_choice == 2:
+                        obj.graph_meal_waste()
+                    elif sub_choice == 3:
+                        obj.graph_cuisine_waste()
+                    elif sub_choice == 4:
+                        obj.graph_meal_category_3d()
+                    elif sub_choice == 5:
+                        obj.graph_reasons_for_waste()
+                    else:
+                        break
+
             elif choice == 3:
-                obj.food_wastage_prevention_steps()
+                while True:
+                    clear_screen()
+                    print("\n--- Food Wastage Prevention Steps ---")
+                    print("1. Average Food Quality Rating per Hostel (Bar Graph)")
+                    print("2. Average Transportation Cost for NGOs (Bar Graph)")
+                    print("3. Average Leftover Quantity per Hostel (Bar Graph)")
+                    print("4. NGO Feedback Distribution (Bar Graph)")
+                    print("5. Transport Mode Usage for Donations (Pie Chart)")
+                    print("0. Go Back to Main Menu")
+
+                    sub_choice = int(input("Enter your choice: "))
+                    if sub_choice == 1:
+                        obj.graph_food_quality_rating()
+                    elif sub_choice == 2:
+                        obj.graph_transport_cost()
+                    elif sub_choice == 3:
+                        obj.graph_leftover_quantity()
+                    elif sub_choice == 4:
+                        obj.graph_ngo_feedback()
+                    elif sub_choice == 5:
+                        obj.graph_transport_mode_usage()
+                    else:
+                        break
             else:
                 print("Invalid choice! Please enter a valid option.")
         except ValueError:
             print("Please enter a valid integer choice.")
+
+
 
 if __name__ == "__main__":
     main()
